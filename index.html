@@ -48,8 +48,8 @@
 <body>
     <h1>Will you be my Valentine, Ruth? ❤️</h1>
     <div class="buttons">
-        <button class="yes" onclick="alert('Yay! ❤️')">Yes</button>
-        <button class="no" onmouseover="moveButton(this)">No</button>
+        <button id="yes" onclick="link(this)">Yes</button>
+        <button id="no" onmouseover="moveButton(this)">No</button>
     </div>
     <script>
         function moveButton(button) {
@@ -57,6 +57,11 @@
             const y = Math.random() * (window.innerHeight - 50);
             button.style.left = `${x}px`;
             button.style.top = `${y}px`;
+        }
+    </script>
+    <script>
+        function link(button) {
+            window.open("https://www.youtube.com/");
         }
     </script>
 </body>
