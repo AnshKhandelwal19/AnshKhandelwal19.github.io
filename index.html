@@ -3,66 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be My Valentine?</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: pink;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            animation: heartbeat 1.5s infinite alternate;
-        }
-        @keyframes heartbeat {
-            from { transform: scale(1); }
-            to { transform: scale(1.1); }
-        }
-        .buttons {
-            margin-top: 20px;
-        }
-        button {
-            font-size: 1.2rem;
-            padding: 10px 20px;
-            margin: 10px;
-            border: none;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-        .yes {
-            background-color: red;
-            color: white;
-        }
-        .no {
-            background-color: white;
-            color: black;
-            position: absolute;
-        }
-    </style>
+    <title>Document</title>
+    <script src="/scripts/name.js"></script>
+    <script src="/scripts/submit.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Will you be my Valentine, Ruth? ❤️</h1>
-    <div class="buttons">
-        <button id="yes" onclick="link(this)">Yes</button>
-        <button id="no" onmouseover="moveButton(this)">No</button>
+    <div id="name"></div>
+    <div id="form">
+        <form id="send-msg">
+            <input type="text" name="text" required/>
+            <button id="ping" type="submit">Ping</button>
+        </form>
     </div>
-    <script>
-        function moveButton(button) {
-            const x = Math.random() * (window.innerWidth - 100);
-            const y = Math.random() * (window.innerHeight - 50);
-            button.style.left = `${x}px`;
-            button.style.top = `${y}px`;
-        }
-    </script>
-    <script>
-        function link(button) {
-            window.open("https://www.youtube.com/");
-        }
-    </script>
 </body>
 </html>

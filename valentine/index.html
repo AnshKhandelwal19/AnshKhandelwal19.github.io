@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Be My Valentine?</title>
+</head>
+<body>
+    <h1>Will you be my Valentine, Ruth? ❤️</h1>
+    <div class="buttons">
+        <button id="yes" onclick="link(this)">Yes</button>
+        <button id="no" onmouseover="moveButton(this)">No</button>
+    </div>
+    <script>
+        function moveButton(button) {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 50);
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+    <script>
+        function link(button) {
+            window.open("https://www.youtube.com/");
+        }
+    </script>
+</body>
+</html>
