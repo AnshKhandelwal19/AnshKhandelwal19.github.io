@@ -4,13 +4,13 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: pink;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 h1 {
     font-size: 2.5rem;
     animation: heartbeat 1.5s infinite alternate;
+    color:white;
 }
 @keyframes heartbeat {
     from { transform: scale(1); }
@@ -30,9 +30,15 @@ button {
 #yes {
     background-color: red;
     color: white;
+    translate: -60px;
 }
 #no {
     background-color: white;
     color: black;
     position: absolute;
+    translate: -40px;
+}
+
+.message {
+    z-index:3;
 }
