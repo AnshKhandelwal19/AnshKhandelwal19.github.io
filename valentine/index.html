@@ -3,62 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/valentine/rose.css">
-    <link rel="stylesheet" href="/valentine/styles.css"
+    <link rel="stylesheet" href="/valentine/styles.css">
     <title>Be My Valentine?</title>
 </head>
 <body>
-    <div class="message">
-      <h1>Will you be my Valentine, Ruth? ❤️</h1>
-    <div class="buttons">
-        <button id="yes" onclick="link(this)">Yes</button>
-        <button id="no" onmouseover="moveButton(this)">No</button>
+    <div class="nav">
+        <button id="2025">2025</button>
+        <button id="2026">2026</button>
     </div>
+
     <script>
-        function moveButton(button) {
-            const x = Math.random() * (window.innerWidth - 100);
-            const y = Math.random() * (window.innerHeight - 50);
-            button.style.left = `${x}px`;
-            button.style.top = `${y}px`;
-        }
+        document.getElementById('2025').addEventListener('click', function() {
+            window.location.href = '/valentine/2025/index.html';
+        });
+
+        document.getElementById('2026').addEventListener('click', function() {
+            window.location.href = '/valentine/2026/index.html';
+        });
     </script>
-    <script>
-        function link(button) {
-            window.open("https://discord.gg/strjc3GQ");
-        }
-    </script>
-    </div>
-    <div class="container">
-        <div class="glass">
-        <div class="shine"></div>
-      </div>
-        <div class="thorns">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="leaves">
-            <div></div>
-            <div></div>
-        <div></div>
-        <div></div>
-        </div>
-        <div class="petals">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-      <div class="deadPetals">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
 </body>
 </html>

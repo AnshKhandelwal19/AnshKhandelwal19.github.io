@@ -1,5 +1,5 @@
 const val = 'Ansh Khandelwal';
-const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+const letters = 'abcdefghijklmnopqrstuvwxyz';
 
 document.addEventListener('DOMContentLoaded', () => {
     const nameTag = document.getElementById('name');
