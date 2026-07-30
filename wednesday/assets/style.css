@@ -230,16 +230,6 @@ a:focus-visible, button:focus-visible{
 }
 
 /* ============================================================
-   Interstitial car band
-   ============================================================ */
-.interstitial{
-  border-top:1px solid rgba(255,255,255,.08);
-  border-bottom:1px solid rgba(255,255,255,.08);
-  line-height:0;
-}
-.interstitial img{ display:block; object-fit:cover; max-height:340px; width:100%; }
-
-/* ============================================================
    About / statement
    ============================================================ */
 .about-section{ padding:6.5rem 0; }
